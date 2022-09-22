@@ -9,6 +9,8 @@ public class Product {
 	private String imageUrl;
 	//String[] imageUrls;
 	private int unitsInStock;
+	
+	//source > generate getters and setters
 	public String getName() {
 		return name;
 	}
@@ -22,11 +24,12 @@ public class Product {
 		this.unitPrice = unitPrice;
 	}
 	public double getDiscount() {
+		this.discount = discount + 5; //
 		return discount;
 	}
-	public void setDiscount(double discount) {
-		this.discount = discount;
-	}
+//	public void setDiscount(double discount) {
+//		this.discount = discount;
+//	}
 	public String getImageUrl() {
 		return imageUrl;
 	}
